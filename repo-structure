@@ -1,0 +1,29 @@
+📂 fraud-detection-system
+│── 📜 README.md               <- Project overview, setup guide, API docs
+│── 📜 requirements.txt        <- Dependencies for environment setup
+│── 📜 .gitignore              <- Ignore unnecessary files (logs, data dumps)
+│── 📂 data
+│   ├── transactions.csv       <- Sample dataset for fraud detection
+│   ├── preprocessed.csv       <- Processed dataset
+│── 📂 notebooks
+│   ├── exploratory_analysis.ipynb  <- EDA, feature selection
+│   ├── model_training.ipynb        <- Model training, evaluation
+│── 📂 src
+│   ├── config.py              <- Configuration settings
+│   ├── preprocess.py          <- Data cleaning & feature engineering
+│   ├── model.py               <- ML model training and inference
+│   ├── streaming.py           <- Kafka consumer logic
+│   ├── db.py                  <- Database connection (PostgreSQL)
+│   ├── main.py                <- FastAPI real-time fraud detection API
+│── 📂 docker
+│   ├── Dockerfile             <- Docker setup for API deployment
+│   ├── docker-compose.yml     <- Container orchestration (API + DB + Kafka)
+│── 📂 tests
+│   ├── test_api.py            <- Unit tests for API
+│   ├── test_model.py          <- Unit tests for ML model
+│── 📂 docs
+│   ├── API_DOCS.md            <- API documentation with usage examples
+│   ├── architecture.png       <- System design diagram
+│── 📂 .github
+│   ├── workflows
+│       ├── ci_cd.yml          <- GitHub Actions for CI/CD
