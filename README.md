@@ -1,9 +1,9 @@
-# 🚀 Real-Time Fraud Detection System
+#  Real-Time Fraud Detection System
 
-## 📌 **Project Overview**
+##  **Project Overview**
 This project implements a **real-time fraud detection system** using **machine learning** and **streaming technologies**. The system predicts fraudulent transactions using a **Random Forest Classifier**, serves predictions via a **FastAPI REST API**, and integrates with **Apache Kafka** for real-time transaction monitoring. Fraudulent transactions are stored in a **PostgreSQL database** for further analysis.
 
-## 🎯 **Key Features**
+##  **Key Features**
 - ✅ **Machine Learning Model**: Detects fraud with a trained Random Forest classifier.
 - ✅ **FastAPI Deployment**: Real-time prediction API.
 - ✅ **Kafka Integration**: Streaming transactions for real-time monitoring.
@@ -48,7 +48,7 @@ This project implements a **real-time fraud detection system** using **machine l
 ```
 ---
 
-## 📊 **Dataset**
+##  **Dataset**
 - 📌 **Source**: [PaySim Fraud Detection Dataset - Kaggle](https://www.kaggle.com/datasets/ealaxi/paysim1)
 - 📌 **Description**: A synthetic dataset that simulates mobile money transactions.
 - 📌 **Key Features**:
@@ -61,7 +61,7 @@ This project implements a **real-time fraud detection system** using **machine l
 
 ---
 
-## 🏗 **Installation & Setup**
+##  **Installation & Setup**
 ### 🔹 **1. Clone the Repository**
 ```bash
 git clone https://github.com/augustya0new/RT-Fraud-Detection-E2E-Pipeline.git
@@ -87,7 +87,7 @@ jupyter notebook notebooks/model_training.ipynb
 
 ---
 
-## 🚀 **Running the API Locally**
+##  **Running the API Locally**
 1️⃣ **Start FastAPI**
 ```bash
 uvicorn src.main:app --reload
@@ -101,7 +101,7 @@ curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json"
 
 ---
 
-## 📡 **Kafka Streaming Integration**
+##  **Kafka Streaming Integration**
 **Start Kafka (Dockerized Setup)**
 ```bash
 docker run -d --name kafka -p 9092:9092 wurstmeister/kafka
@@ -113,7 +113,7 @@ python src/streaming.py
 
 ---
 
-## 🛠 **Docker Deployment**
+##  **Docker Deployment**
 1️⃣ **Build & Start Containers**
 ```bash
 docker-compose up --build
@@ -126,7 +126,7 @@ curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json"
 
 ---
 
-## ✅ **Unit Testing & CI/CD**
+##  **Unit Testing & CI/CD**
 Run unit tests before deployment.
 ```bash
 pytest tests/
@@ -137,11 +137,11 @@ pytest tests/
 
 ---
 
-## ✨ **Contributions & Support**
+##  **Contributions & Support**
 - **Contributions**: Open a PR or issue.
 - **License**: MIT License.
 - **Contact**: kumaraugustya1@gmail.com | augustya0new
 
 ---
-🚀 **Enjoy real-time fraud detection at scale!** 🔥
+ **Enjoy real-time fraud detection at scale!** 🔥
 
