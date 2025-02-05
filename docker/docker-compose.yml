@@ -1,0 +1,18 @@
+version: "3"
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: fraud_db
+    ports:
+      - "5432:5432"
